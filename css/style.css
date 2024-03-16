@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body,
+.container,
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background: #4a98f7;
+  height: 100vh;
+}
+img {
+  width: 250px;
+}
+.container {
+  width: 400px;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
+}
+.container h1 {
+  padding: 10px;
+  font-size: 40px;
+}
+.container .content {
+  width: 100%;
+  justify-content: space-between;
+}
+.container .content.disable {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.container .content .controls {
+  border: 1px solid #999;
+  width: calc(100% / 2 - 5px);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.container .content .controls select {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container .set {
+  width: 100%;
+  margin: 20px 0px 0;
+  border: 0;
+  outline: 0;
+  background-color: #4a98f7;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container .set:hover {
+  background-color: #1a71dd;
+  transition: all 0.3s;
+}
